@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-divergence-jc-dynmic"
+		},
+		"StorageAccount_connectionString": {
+			"value": ""
+		},
+		"OnInvoicefilearival_properties_typeProperties_scope": {
+			"value": "/subscriptions/bd56d41b-25f4-4605-8e21-ff19bdcc73db/resourceGroups/rg-divergence-jc-dynamic/providers/Microsoft.Storage/storageAccounts/sadivergencejcdynamic"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
