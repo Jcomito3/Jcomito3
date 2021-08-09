@@ -1,0 +1,24 @@
+{
+	"name": "OnInvoicefilearival",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/bd56d41b-25f4-4605-8e21-ff19bdcc73db/resourceGroups/rg-divergence-jc-dynamic/providers/Microsoft.Storage/storageAccounts/sadivergencejcdynamic",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
